@@ -34,7 +34,7 @@
             font-weight: 300;
             top: 150px;
             left: 200px;
-            text-shadow: 2px 2px 5px #5500ff65;
+
 
         }
 
@@ -63,7 +63,6 @@
             left: 200px;
             font-family: "Open Sans";
             font-size: 25px;
-            text-shadow: 2px 2px 3px #5500ff65;
             line-height: 2;
 
         }
@@ -74,7 +73,7 @@
             height: 10px;
             padding: 40px 0px;
         }
-        
+
         a {
             color: aliceblue;
             font-family: "identification", sans-serif;
@@ -85,6 +84,7 @@
             letter-spacing: -15px;
             text-shadow: 2px 2px 5px #000000;
         }
+
         nav h1 {
             color: aliceblue;
             font-family: "Josefin Sans";
@@ -94,6 +94,7 @@
             top: 20px;
             text-shadow: 2px 2px 5px black;
         }
+
         .logo {
             position: absolute;
             top: 35px;
@@ -131,25 +132,39 @@
 
         }
 
-        .card {
-            background: linear-gradient(to right, rgba(78, 2, 201, 0.329), #0b0517);
-            width: 300px;
-            height: 400px;
-            border-radius: 10%;
-            ;
+        .card-conteiner {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
         }
 
-        .card p {
-            color: aliceblue;
-            font-family: Arial, Helvetica, sans-serif;
+        .card-1, .card-2 {
+            width: 600px;
+            height: 300px;
+            border-radius: 25px;
+            margin-left: 50px;
+            margin-right: 50px;
+            background: linear-gradient(to right, rgba(44, 20, 82, 0.329), #6c23ff77);
+            border-top: 3px solid #6b04fb;
         }
-
-        .card img {
+        .card-1 img{
             position: relative;
-            left: 95px;
-            width: 100px;
+            width: 120px;
             height: auto;
+            top: 80px;
+            left: 80px;
+            filter:drop-shadow( 2px 2px 2px#9900ff);
         }
+        .card-1 hr{
+            width: 3px;
+            height: 150px;
+            background-color: #ffffff;
+            position: relative;
+            right: 20px;
+            bottom: 70px;
+        }
+        
+    
     </style>
 </head>
 
@@ -171,7 +186,7 @@
             <a href="https://www.instagram.com/cacaz.7" target="_blank">
                 <img src="img/instagram.png" alt="instagram">
             </a>
-            
+
         </div>
 
     </header>
@@ -198,15 +213,14 @@
         <section id="habilidades">
             <h2>Habilidades</h2>
             <div class="card-conteiner">
-                <div class="card">
-                    <img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/python-hm2m1glgg1kf6s9s7q6qf5.png/python-6658ynthwqclcx3badvtt.png?_a=DATAg1AAZAA0"
-                        title="python icons"></a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, nemo. Deleniti cum ex unde
-                        sequi veniam maxime sapiente itaque. Labore libero nulla minima, at repellendus soluta dolorum
-                        officia. Illo, sapiente?</p>
-
+                <div class="card-1">
+                    <img src="img/code.png " alt="">
+                    <hr>
+                </div>
+                <div class="card-2">
 
                 </div>
+                <div>
 
 
         </section>
