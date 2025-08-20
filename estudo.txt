@@ -1,0 +1,194 @@
+HTML
+
+<!DOCTYPE html> – Define que o documento é HTML5.
+
+<html lang="pt-br"> – Raiz do documento; lang define o idioma da página.
+
+<head> – Contém metadados, título da página e links externos (CSS, fonts).
+
+<meta charset="UTF-8"> – Define a codificação de caracteres (acentos e símbolos).
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> – Faz o site ser responsivo em diferentes telas.
+
+<title> – Título da aba do navegador.
+
+<link> – Conecta arquivos externos (fonts, CSS, ícones).
+
+<style> – Estilos CSS embutidos diretamente no HTML.
+
+<body> – Corpo do site; tudo que aparece visualmente deve estar dentro dele.
+
+<header> – Cabeçalho; geralmente contém menu, logo ou navegação.
+
+<nav> – Área de navegação; contém links internos ou externos.
+
+<a> – Link clicável; atributos importantes:
+
+href: destino do link
+
+target="_blank": abre em nova aba
+
+<h1> / <h2> / <h3> – Títulos e subtítulos; <h1> é o mais importante, <h2> abaixo dele.
+
+<p> – Parágrafo de texto.
+
+<section> – Seção independente do conteúdo (ex: Skills, Formações).
+
+<main> – Conteúdo principal do site.
+
+<footer> – Rodapé do site; informações de contato, copyright, links extras.
+
+<img> – Imagem; atributos importantes:
+
+src: caminho da imagem
+
+alt: texto alternativo
+
+width / height: tamanho da imagem
+
+<hr> – Linha horizontal para separar visualmente conteúdos.
+
+<div> – Container genérico; usado para agrupar elementos e aplicar estilos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS / Propriedades Comuns
+Posicionamento e Layout
+
+
+position – Define o tipo de posicionamento:
+
+absolute: posição fixa em relação ao container posicionado.
+
+relative: posição relativa à posição normal.
+
+static: posição padrão (não se move).
+
+fixed: fixa em relação à tela, mesmo ao rolar.
+
+top / left / bottom / right – Distância do elemento em relação ao container quando position != static.
+
+display – Define como o elemento se comporta:
+
+flex: container flexível; facilita alinhamento horizontal/vertical.
+
+grid: container em grade.
+
+block: ocupa toda a largura disponível.
+
+inline: ocupa só o espaço do conteúdo.
+
+justify-content – Alinhamento horizontal dos filhos em flex ou grid.
+align-items – Alinhamento vertical dos filhos em flex ou grid.
+gap – Espaçamento entre elementos em flex ou grid.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dimensões
+
+width / height – Largura e altura do elemento.
+min-height / min-width – Altura ou largura mínima.
+max-height / max-width – Altura ou largura máxima.
+margin / margin-top / margin-left / margin-right / margin-bottom – Espaçamento externo do elemento.
+padding / padding-top / padding-left / padding-right / padding-bottom – Espaçamento interno do elemento.
+
+
+
+
+
+
+
+
+
+
+Cores e Fundo
+
+color – Cor do texto.
+background-color – Cor de fundo.
+background – Pode receber imagens, gradientes ou cores.
+linear-gradient – Gradiente linear de cores.
+radial-gradient – Gradiente circular.
+
+
+
+
+
+
+
+
+
+
+
+Texto e Fonte
+
+font-family – Fonte usada no texto.
+font-size – Tamanho do texto.
+font-weight – Espessura da fonte (ex: 300 leve, 700 negrito).
+line-height – Altura entre linhas.
+letter-spacing – Espaço entre letras.
+text-decoration – Decoração do texto (none remove sublinhado).
+text-shadow – Sombra do texto.
+
+
+
+
+
+
+
+
+
+
+
+
+Bordas e Sombra
+
+border / border-top / border-bottom – Define bordas do elemento.
+border-radius – Arredonda os cantos.
+box-shadow – Adiciona sombra à caixa do elemento.
+
+
+
+
+
+
+
+
+
+
+
+Outras
+
+z-index – Define a ordem de empilhamento dos elementos (quanto maior, mais “na frente”).
+overflow – Define como lidar com conteúdo que ultrapassa o container:
+
+hidden: esconde o excesso
+
+scroll: cria barra de rolagem
+
+auto: rolagem apenas se necessário
+
+@font-face – Importa fonte customizada.
+target="_blank" – Abre links em nova aba (em <a>).

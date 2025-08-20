@@ -22,6 +22,7 @@
             font-display: swap;
         }
 
+
         body {
             background-color: #0b0517;
         }
@@ -46,15 +47,9 @@
             height: auto;
             margin-top: 10px;
             border-radius: 100%;
+            box-shadow: 20px 20px 0px purple;
         }
 
-        .conteudo-principal span {
-            position: absolute;
-            top: 40px;
-            left: 50px;
-            width: 500px;
-            height: auto
-        }
 
         .hero p {
             color: rgb(255, 255, 255);
@@ -116,7 +111,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border-bottom: 2px solid #ffffff33;
+            border-top: 2px solid rgba(255, 255, 255, 0.3);
         }
 
         #habilidades h2 {
@@ -124,12 +119,31 @@
             color: aliceblue;
             font-size: 60px;
             position: relative;
-            bottom: 200px;
+            bottom: 120px;
+        }
+
+        #habilidades p {
+            font-family: "Open Sans";
+            color: aliceblue;
+            font-size: 25px;
+            position: relative;
+            bottom: 60px;
         }
 
         #habilidades {
             background: radial-gradient(#4323834f, #0b0517);
 
+        }
+
+        #formacoes {
+            background: radial-gradient(#4323834f, #0b0517);
+        }
+
+        #formacoes h2 {
+            font-family: "Josefin Sans";
+            color: aliceblue;
+            font-size: 60px;
+            position: relative;
         }
 
         .card-conteiner {
@@ -138,7 +152,8 @@
             margin-top: 50px;
         }
 
-        .card-1, .card-2 {
+        .card-1,
+        .card-2 {
             width: 600px;
             height: 300px;
             border-radius: 25px;
@@ -146,16 +161,19 @@
             margin-right: 50px;
             background: linear-gradient(to right, rgba(44, 20, 82, 0.329), #6c23ff77);
             border-top: 3px solid #6b04fb;
+
         }
-        .card-1 img{
+
+        .card-1 img {
             position: relative;
             width: 120px;
             height: auto;
             top: 80px;
             left: 80px;
-            filter:drop-shadow( 2px 2px 2px#9900ff);
+
         }
-        .card-1 hr{
+
+        .card-1 hr {
             width: 3px;
             height: 150px;
             background-color: #ffffff;
@@ -163,8 +181,99 @@
             right: 20px;
             bottom: 70px;
         }
-        
-    
+
+        .logos-skills-1 {
+            display: grid;
+            gap: 20px;
+            position: relative;
+            bottom: 290px;
+            left: 270px;
+        }
+
+        .logos-skills-1 img {
+            width: 60px;
+            height: auto;
+        }
+
+        .logos-skills-2 {
+            display: grid;
+            gap: 20px;
+            position: relative;
+            bottom: 430px;
+            left: 370px;
+        }
+
+        .logos-skills-2 img {
+            width: 60px;
+            height: auto;
+        }
+
+        .card-2 img {
+            position: relative;
+            width: 120px;
+            height: auto;
+            top: 95px;
+            left: 90px;
+
+        }
+
+        .card-2 hr {
+            width: 3px;
+            height: 150px;
+            background-color: #ffffff;
+            position: relative;
+            right: 20px;
+            bottom: 70px;
+        }
+
+        .logos-folder {
+            display: grid;
+            gap: 20px;
+            position: relative;
+            bottom: 310px;
+            left: 270px;
+        }
+
+        .logos-folder img {
+            width: 60px;
+            height: auto;
+        }
+
+        .logo-formacoes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .logo-formacoes img {
+            position: static;
+            width: 1000px;
+            height: auto;
+
+
+        }
+
+        footer {
+            width: auto;
+            height: 50px;
+            background: linear-gradient(to right, #6b04fb, rgb(42, 0, 77));
+        }
+
+        footer p {
+            font-family: "josefin sans";
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        footer a {
+            font-family: "Josefin sans";
+            letter-spacing: normal;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            text-shadow: none;
+        }
     </style>
 </head>
 
@@ -174,8 +283,8 @@
     <header>
         <nav>
             <a href="#habilidades">Habilidades</a>
-            <a href="#formações">Formações</a>
-            <a href="#obre">Sobre </a>
+            <a href="#formacoes">Formações</a>
+            <a href="#sobre">Sobre </a>
             <h1>Portfolio</h1>
         </nav>
 
@@ -201,7 +310,7 @@
                     My goal is to grow in the software field and create projects <br> that make a difference.
                 </p>
 
-                <span><img src="img/purple-circle.png" alt="Circulo roxo"></span>
+
                 <img src="img/foto-perfil-gitv2.png" alt="Imagem Perfil">
             </div>
 
@@ -211,16 +320,30 @@
 
 
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2>Skills</h2>
+            <p>Skills in progress – currently improving through my course.</p>
             <div class="card-conteiner">
                 <div class="card-1">
                     <img src="img/code.png " alt="">
                     <hr>
+                    <div class="logos-skills-1">
+                        <img src="img/python.png" alt="">
+                        <img src="img/mysql.png " alt="">
+                    </div>
+                    <div class="logos-skills-2">
+                        <img src="img/html.png" alt="">
+                        <img src="img/css.png " alt="">
+                    </div>
                 </div>
                 <div class="card-2">
+                    <img src="img/folder.png" alt="">
+                    <hr>
+                    <div class="logos-folder">
+                        <img src="img/office.png" alt="">
+                        <img src="img/ia.png" alt="">
 
+                    </div>
                 </div>
-                <div>
 
 
         </section>
@@ -228,20 +351,15 @@
 
         <section id="formacoes">
             <h2>Formações academicas</h2>
+            <div class="logo-formacoes">
+                <img src="img/senai-sesi.png" alt="">
+
+            </div>
         </section>
-
-
-        <section id="sobre">
-            <h2>Sobre mim</h2>
-        </section>
-
-
-
-
 
     </main>
     <footer>
-
+        <p>Email: <a href="mailto:gustavocaua934@gmail.com" target="_blank">gustavocaua934@gmail.com</a></p>
     </footer>
 </body>
 
